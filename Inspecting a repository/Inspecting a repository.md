@@ -23,14 +23,14 @@ Basic usage:
 `git status`
 
 ![](git_status.png)
-<p style="text-align: center;">Output of Git status</p>
+<p style="text-align: center;">Output of Git status on repository with changes.</p>
 
-The screenshot/home/francis/Documents/Markdown/Hub/Inspecting a repository/git_log.png shows a typical output of `git status`.
+The screenshot shows a typical output of `git status`.
 
 **Untracked files** simply shows files that hasn't been added(staged) to the repository.
 
 ![](git_status_add.png)
-<p style="text-align: center;">Output of Git status with files added to staging</p>
+<p style="text-align: center;">Output of Git status with files added to staging.</p>
 
 After adding 2 files to the staging area, we can see a new entry(Changes to be committed), this entry shows file that were just added to the repository. If we want to remove any(Eg .metadata),we simply use.
 
@@ -47,6 +47,10 @@ Git status shows more information but this is what we'll need half of most of th
 <h2><b><p style="text-align: center;">Git log</p></b></h2>
 
 An insanely helpful command which shows the commit logs. It can also filter commit
+
+Basic usage:
+
+`git log`
 
 ![](git_log.png)
 
@@ -108,11 +112,14 @@ From it's name you can guess what it does but lets outline it's function.
 
 Git blame is might be more enjoyable on a GUI/Web.
 
+Basic usage:
+
+```git blame <file>```
+
 `git blame` only works on file.
 
 ![](git_blame.png)
 
-```git blame <file>```
 Using `git blame <file>` should give the above screenshot but i added the color option/flag since the default `git blame` could make me blind.
 
 `git blame <file> --color-lines`
